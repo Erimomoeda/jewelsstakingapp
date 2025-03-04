@@ -21,15 +21,15 @@ export const StakedNFTCard =({ tokenId, refetchStakedInfo, refetchOwnedNFTs }: S
     );
 
     return (
-        <div style={{ margin: "10px" }}>
+        <div style={{ margin: "10px", width: "calc(50% - 20px)" }}>
             <MediaRenderer
                 client={client}
                 src={nft?.metadata.image}
                 style={{
                     borderRadius: "10px",
                     marginBottom: "10px",
-                    height: "200px",
-                    width: "200px"
+                    maxWidth: "100%",
+                    height: "auto",
                 }}
             />
             <p style={{ margin: "0 10px 10px 10px"}}>{nft?.metadata.name}</p>

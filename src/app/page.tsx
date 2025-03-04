@@ -12,7 +12,9 @@ export default function Home() {
       color: "#fff",
       alignItems: "center",
       margin: "20px auto",
-      width: "500px",
+      maxWidth: "500px",
+      width: "100%",
+      padding: "0 10px"
     }}>
       <h1>JEWELS STAKING</h1>
       <br></br>

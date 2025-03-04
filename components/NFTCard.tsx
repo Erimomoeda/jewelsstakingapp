@@ -16,15 +16,15 @@ export const NFTCard = ({ nft, refetchOwnedNFTs, refecthStakedInfo }: OwnedNFTsP
     const [isApproved, setIsApproved] = useState(false);
 
     return (
-        <div style={{ margin: "10px" }}>
+        <div style={{ margin: "10px", width: "calc(50% - 20px)" }}>
             <MediaRenderer
                 client={client}
                 src={nft.metadata.image}
                 style={{
                     borderRadius: "10px",
                     marginBottom: "10px",
-                    height: "200px",
-                    width: "200px"
+                    maxWidth: "100%",
+                    height: "auto",                   
                 }}
             />
             <p style={{ margin: "0 10px 10px 10px"}}>{nft.metadata.name}</p>
@@ -53,7 +53,7 @@ export const NFTCard = ({ nft, refetchOwnedNFTs, refecthStakedInfo }: OwnedNFTsP
                     alignItems: "center"
                 }}>
                     <div style={{
-                        minWidth: "300px",
+                        minWidth: "90%",
                         backgroundColor: "#20b2aa",
                         padding: "20px",
                         borderRadius: "10px",
