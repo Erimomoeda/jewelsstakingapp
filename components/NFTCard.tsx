@@ -19,7 +19,7 @@ export const NFTCard = ({ nft, refetchOwnedNFTs, refecthStakedInfo }: OwnedNFTsP
         <div style={{ margin: "10px", width: "calc(50% - 20px)" }}>
             <MediaRenderer
                 client={client}
-                src={nft?.metadata.animation_url || nft?.metadata.image}
+                src={nft.metadata.image}
                 style={{
                     borderRadius: "10px",
                     marginBottom: "10px",
