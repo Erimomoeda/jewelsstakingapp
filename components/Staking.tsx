@@ -80,7 +80,7 @@ export const Staking = () => {
                     margin: "20px 0",
                     width: "100%"
                 }}>
-                    <h2 style={{ marginRight: "20px"}}>Claim JEWELS ➤</h2>
+                    <h2 style={{ marginRight: "20px"}}>JEWELS ➤</h2>
                     <TransactionButton
                          transaction={() => (
                             claimTo({
@@ -100,7 +100,7 @@ export const Staking = () => {
                             padding: "10px 20px",
                             borderRadius: "10px",
                         }}
-                    >Claim NFT</TransactionButton>
+                    >Mint NFT</TransactionButton>
                 </div>
                 <hr style={{
                     width: "100%",
