@@ -24,11 +24,12 @@ export const StakedNFTCard =({ tokenId, refetchStakedInfo, refetchOwnedNFTs }: S
         <div style={{ margin: "10px", width: "calc(50% - 20px)" }}>
             <MediaRenderer
                 client={client}
-                src={nft?.metadata.image}
+                src={nft?.metadata.animation_url || nft?.metadata.image}
                 style={{
                     borderRadius: "10px",
                     marginBottom: "10px",
                     maxWidth: "100%",
+                    width: "100%",
                     height: "auto",
                 }}
             />
@@ -53,6 +54,7 @@ export const StakedNFTCard =({ tokenId, refetchStakedInfo, refetchOwnedNFTs }: S
                     padding: "10px",
                     borderRadius: "10px",
                     cursor: "pointer",
+                    maxWidth: "100%",
                     width: "100%",
                     fontSize: "12px"
                 }}

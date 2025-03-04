@@ -40,13 +40,17 @@ export const StakeRewards = () => {
     return (
         <div style={{ width: "100%", margin: "20px 0", display: "flex", flexDirection: "column", boxSizing: "border-box" }}>
             {!isTokenBalanceLoading && (
-                <p>
+                <p
+                  style={{
+                    marginBottom: "10px",
+                  }}  
+                >
                 Wallet Balance: {Number(toEther(BigInt(tokenBalance!.toString()))).toFixed(4)}
                 <span style={{ fontSize: "10px", marginLeft: "4px" }}>$JWST</span>
                 </p>
             )}
             <h2>
-                Stake Rewards {stakedInfo && Number(toEther(BigInt(stakedInfo[1].toString()))).toFixed(4)}
+                Stake Rewards {stakedInfo && Number(toEther(BigInt(stakedInfo[1].toString()))).toFixed(3)}
                 <span style={{ fontSize: "14px", marginLeft: "6px" }}>$JWST</span>
             </h2>
             <TransactionButton
@@ -69,7 +73,8 @@ export const StakeRewards = () => {
                     borderRadius: "10px",
                     cursor: "pointer",
                     width: "100%",
-                    fontSize: "12px"
+                    fontSize: "12px",
+                    marginTop: "10px"
                 }}
             >Claim Rewards</TransactionButton>
         </div>
