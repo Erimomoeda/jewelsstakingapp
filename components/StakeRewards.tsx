@@ -46,7 +46,7 @@ export const StakeRewards = () => {
                 </p>
             )}
             <h2>
-                Stake Rewards: {stakedInfo && Number(toEther(BigInt(stakedInfo[1].toString()))).toFixed(4)}
+                Stake Rewards {stakedInfo && Number(toEther(BigInt(stakedInfo[1].toString()))).toFixed(4)}
                 <span style={{ fontSize: "14px", marginLeft: "6px" }}>$JWST</span>
             </h2>
             <TransactionButton
