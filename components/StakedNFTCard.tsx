@@ -35,9 +35,10 @@ export const StakedNFTCard =({ tokenId, refetchStakedInfo, refetchOwnedNFTs }: S
                 }}
             />
             <p style={{
-                 margin: "0 10px 10px 10px",
+                 margin: "0 0 10px 0",
                  fontSize: "12px",
-                 whiteSpace: "nowrap"   
+                 whiteSpace: "nowrap",
+                 overflow: "hidden",
                }}
             >
                {nft?.metadata.name}
@@ -65,7 +66,8 @@ export const StakedNFTCard =({ tokenId, refetchStakedInfo, refetchOwnedNFTs }: S
                     maxWidth: "100%",
                     width: "100%",
                     fontSize: "12px",
-                    boxSizing: "border-box"
+                    boxSizing: "border-box",
+                    minWidth: "0",
                 }}
             >Withdraw</TransactionButton>   
         </div>
