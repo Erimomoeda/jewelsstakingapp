@@ -36,7 +36,7 @@ export const StakedNFTCard =({ tokenId, refetchStakedInfo, refetchOwnedNFTs }: S
             />
             <p style={{
                  margin: "0 0 10px 0",
-                 fontSize: "12px",
+                 fontSize: "14px",
                  whiteSpace: "nowrap",
                  overflow: "hidden",
                }}

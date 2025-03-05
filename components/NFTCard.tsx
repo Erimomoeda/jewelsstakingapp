@@ -29,7 +29,7 @@ export const NFTCard = ({ nft, refetchOwnedNFTs, refecthStakedInfo }: OwnedNFTsP
             />
             <p style={{
                  margin: "0 10px 10px 10px",
-                 fontSize: "12px",
+                 fontSize: "14px",
                  whiteSpace: "nowrap"     
                }}
             >
