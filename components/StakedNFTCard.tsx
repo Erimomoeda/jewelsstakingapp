@@ -25,6 +25,7 @@ export const StakedNFTCard =({ tokenId, refetchStakedInfo, refetchOwnedNFTs }: S
             <MediaRenderer
                 client={client}
                 src={nft?.metadata.animation_url || nft?.metadata.image}
+                controls={false}
                 style={{
                     borderRadius: "10px",
                     marginBottom: "10px",
