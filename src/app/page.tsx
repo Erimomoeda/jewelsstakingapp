@@ -16,8 +16,17 @@ export default function Home() {
       width: "100%",
       padding: "0 10px"
     }}>
-      <h1>JEWELS STAKING</h1>
-      <br></br>
+      <h1
+        style={{
+          border: "2px solid #008b8b",
+           padding: "5px 10px",
+           borderRadius: "5px"
+        }}
+      >
+        JEWELS STAKING
+      </h1>
+      <br>
+      </br>
       <ConnectEmbed
         client={client}
         chain={chain}
