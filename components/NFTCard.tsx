@@ -27,7 +27,14 @@ export const NFTCard = ({ nft, refetchOwnedNFTs, refecthStakedInfo }: OwnedNFTsP
                     height: "auto",                   
                 }}
             />
-            <p style={{ margin: "0 10px 10px 10px"}}>{nft.metadata.name}</p>
+            <p style={{
+                 margin: "0 10px 10px 10px",
+                 fontSize: "12px",
+                 whiteSpace: "nowrap"     
+               }}
+            >
+               {nft.metadata.name}
+            </p>
             <button
                 onClick={() => setIsModalOpen(true)}
                 style={{
